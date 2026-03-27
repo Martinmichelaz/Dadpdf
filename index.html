@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>مقارنة الأناجيل</title>
+	
+	<style>
+		/* إعداد عام */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: "Times New Roman", "Amiri", serif;
+			background: #ffffff;
+			color: #000;
+			direction: rtl;
+			line-height: 1.8;
+		}
+		
+		/* إعداد الصفحة */
+		@page {
+			size: A4;
+			
+		}
+		
+		/* الغلاف */
+		.cover {
+			text-align: center;
+			padding-top: 50px;
+			page-break-after: always;
+		}
+		
+		.cover h1 {
+			font-size: 26px;
+			margin-bottom: 40px;
+		}
+		
+		.cover h2 {
+			font-size: 20px;
+			margin-bottom: 25px;
+		}
+		
+		.cover h3 {
+			font-size: 18px;
+			margin: 10px 0;
+		}
+		
+		.cover h4 {
+			font-size: 16px;
+			margin-top: 30px;
+		}
+		
+		/* الجداول */
+		.table {
+			width: 95%;
+			margin: 30px 10px;
+			border-collapse: collapse;
+		}
+		
+		/* الصف */
+		.row {
+			display: grid;
+			grid-template-columns: 1.6fr repeat(4, 1fr);
+			border: 1px solid #000;
+			border-bottom: none;
+		}
+		
+		/* آخر صف */
+		.row:last-child {
+			border-bottom: 1px solid #000;
+		}
+		
+		/* الخلايا */
+		.row div {
+			padding: 12px 8px;
+			border-left: 1px solid #000;
+			text-align: center;
+			font-size: 14px;
+		}
+		
+		/* أول عمود (العناوين) */
+		.row div:first-child {
+			font-weight: bold;
+			background: #f5f5f5;
+			color: black;
+		}
+		
+		/* الهيدر */
+		.header {
+			background: #000;
+			color: #fff;
+			font-weight: bold;
+			font-size: 15px;
+		}
+		
+		/* منع تقطيع الصفوف */
+		.row {
+			page-break-inside: avoid;
+		}
+		
+		/* مسافة بين الجداول */
+		.table+.table {
+			margin-top: 50px;
+		}
+		
+		/* للطباعة */
+		@media print {
+			body {
+				-webkit-print-color-adjust: exact;
+			}
+			
+			.cover {
+				page-break-after: always;
+			}
+			
+			.table {
+				page-break-inside: avoid;
+			}
+		}
+	</style>
+	
+</head>
+
+<body>
+	
+	<section class="cover">
+		<h1>كليه اللاهوت / كورنر ستون</h1>
+		<h2>مقدم التكليف / ميشيل عزمي سعد</h2>
+		<h3>دكتور المادة / د- باسم صبحي</h3>
+		<h3>اسم المادة / م-ش-ع-ج</h3>
+		<h4>الفرقة / الاولى لسنه 2026</h4>
+	</section>
+	
+	<section class="table">
+		
+		<div class="row header">
+			<div>وجه المقارنة</div>
+			<div>إنجيل متى</div>
+			<div>إنجيل مرقس</div>
+			<div>إنجيل لوقا</div>
+			<div>إنجيل يوحنا</div>
+		</div>
+		
+		<div class="row">
+			<div>مستلمو الإنجيل</div>
+			<div>اليهود</div>
+			<div>الرومان (غير مؤمنين و المؤمنين)</div>
+			<div>الأمم/اليونانيين</div>
+			<div>العالم كله والمؤمنين</div>
+		</div>
+		
+		<div class="row">
+			<div>التركيز على</div>
+			<div>المسيح الملك وتحقيق النبوات</div>
+			<div>المسيح الخادم والعبد</div>
+			<div>إنسانية المسيح</div>
+			<div>لاهوت المسيح (ابن الله)</div>
+		</div>
+		
+		<div class="row">
+			<div>الموضوع الرئيسي</div>
+			<div>يسوع الملك الموعود</div>
+			<div>عبد يهوه المتألم</div>
+			<div>ابن الإنسان المخلص</div>
+			<div>الله الظاهر في الجسد</div>
+		</div>
+		
+		<div class="row">
+			<div>مصدر الكتابة</div>
+			<div>متى الرسول (شاهد عيان)</div>
+			<div>بطرس عن طريق مرقس</div>
+			<div>شهود عيان + تحقيق دقيق</div>
+			<div>يوحنا شاهد عيان</div>
+		</div>
+		
+		<div class="row">
+			<div>سمة الكاتب</div>
+			<div>عشار يهودي</div>
+			<div>عملي و سريع</div>
+			<div>طبيب مثقف ومؤرخ</div>
+			<div> تلميذ محب و روحي</div>
+		</div>
+		
+		<div class="row">
+			<div>محتوى القصة</div>
+			<div>تعاليم كثيرة (5 مواعظ)</div>
+			<div>أحداث سريعة و قصيرة</div>
+			<div>سرد تاريخي منظم</div>
+			<div>تعاليم لاهوتية عميقة</div>
+		</div>
+		
+		<div class="row">
+			<div>عدد المعجزات</div>
+			<div>20</div>
+			<div>18</div>
+			<div>20</div>
+			<div>7</div>
+		</div>
+		
+	</section>
+	
+	<section class="table">
+		
+		<div class="row header">
+			<div>وجه المقارنة</div>
+			<div>إنجيل متى</div>
+			<div>إنجيل مرقس</div>
+			<div>إنجيل لوقا</div>
+			<div>إنجيل يوحنا</div>
+		</div>
+		
+		<div class="row">
+			<div>تاريخ الكتابة (تقريبًا)</div>
+			<div>60–50 م</div>
+			<div>60–50 م</div>
+			<div>60 م</div>
+			<div>95–85 م</div>
+		</div>
+		
+		<div class="row">
+			<div>مكان الكتابة</div>
+			<div>أورشليم/فلسطين</div>
+			<div>روما</div>
+			<div>قيصرية (أثناء سجن بولس)</div>
+			<div>أفسس/بطمس</div>
+		</div>
+		
+		<div class="row">
+			<div>معنى اسم الكاتب</div>
+			<div>عطية الله</div>
+			<div>مطرقة / رجل قوي</div>
+			<div>منير</div>
+			<div>الله يتحنن</div>
+		</div>
+		
+		<div class="row">
+			<div>عدد الأصحاحات</div>
+			<div>28</div>
+			<div>16</div>
+			<div>24</div>
+			<div>21</div>
+		</div>
+		
+		<div class="row">
+			<div>يقدم المسيح</div>
+			<div>الملك/المسيا</div>
+			<div>الخادم/العبد</div>
+			<div>ابن الإنسان</div>
+			<div>ابن الله</div>
+		</div>
+		
+		<div class="row">
+			<div>الآية المفتاحية</div>
+			<div>متى 1:1</div>
+			<div>مرقس 10:45</div>
+			<div>لوقا 19:10</div>
+			<div>يوحنا 20:30-31</div>
+		</div>
+		
+		<div class="row">
+			<div>عرض الكتابة</div>
+			<div>تعليمي ومنظم</div>
+			<div>سريع وحركي</div>
+			<div>تاريخي و دقيق</div>
+			<div> بسيط و لاهوتي عميق </div>
+		</div>
+		
+		<div class="row">
+			<div>أهم التطبيقات</div>
+			<div>المسيح يملك على القلب – التلمذة – الإرسالية</div>
+			<div>الخدمة – الصلاة – استثمار الوقت</div>
+			<div>الصلاة - الرحمة - الهدف في الحياة</div>
+			<div>الإيمان الحقيقي – الحياة الأبدية</div>
+		</div>
+		
+		<div class="row">
+			<div>أهم ما يتميز به</div>
+			<div>اقتباسات كثيرة من العهد القديم عن ملكوت السماوات</div>
+			<div>كلمة "للوقت" 42 مرة - إنجيل عملي</div>
+			<div>تفاصيل وأمثلة خاصة - كلمة "إنسانية المسيح"</div>
+			<div>معجزات "أنا هو" 7 - التركيز على الإيمان</div>
+		</div>
+		
+	</section>
+	
+</body>
+
+</html>
